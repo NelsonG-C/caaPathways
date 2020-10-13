@@ -3,7 +3,11 @@
 }
 
 .App-logo {
+<<<<<<< HEAD
   height: 10vmin;
+=======
+  height: 40vmin;
+>>>>>>> 0d4b1b44b017966d1e1e2afb63e928159669abfb
   pointer-events: none;
 }
 
