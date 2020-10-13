@@ -44,3 +44,7 @@ footer {
 .card-test {
   text-align: center;
 }
+
+.cardItem {
+  margin: 1rem;
+}
