@@ -1,14 +1,16 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { CardItem } from "../components/card";
+import { AnyNaptrRecord } from "dns";
 
-const mockData: object[] = [
-  { data: 1 },
-  { data: 2 },
-  { data: 3 },
-  { data: 1 },
-  { data: 2 },
-  { data: 3 },
+const mockData: any = [
+  { id: "001", title: "test Title here" },
+  { id: "002", title: "test Title here" },
+  { id: "003", title: "test Title here" },
+  { id: "004", title: "test Title here" },
+  { id: "005", title: "test Title here" },
+  { id: "006", title: "test Title here" },
+  { id: "007", title: "test Title here" },
 ];
 
 export const MajorList = (props: any) => {
@@ -17,10 +19,10 @@ export const MajorList = (props: any) => {
       <div className="filter-section"></div>
       <Container>
         <Row>
-          {mockData.map(() => {
+          {mockData.map((val: any) => {
             return (
-              <Col xs={12} md={4} className="card-test">
-                <CardItem />
+              <Col xs={12} md={4} className="card-test" key={val.id}>
+                <CardItem title={val.title} />
               </Col>
             );
           })}
