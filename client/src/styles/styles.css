@@ -22,3 +22,21 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+.jumbotron-home {
+  background-image: url("../logo.svg");
+  text-align: center;
+  height: 600px;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+}
+
+.jumbotron-home h1 {
+  font-size: 8rem;
+}
+
+.j-btn-row button {
+  margin: 1rem;
+}
