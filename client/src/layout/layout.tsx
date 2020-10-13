@@ -1,6 +1,5 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/styles.css";
 
@@ -20,7 +19,7 @@ export const Layout = (props: any) => {
         </Navbar.Brand>
         <Nav.Link>About</Nav.Link>
       </Navbar>
-      <Container>{props.children}</Container>
+      {props.children}
       <footer>
         <div>Cellular Agriculture Australia 2020</div>
       </footer>
