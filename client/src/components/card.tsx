@@ -1,6 +1,13 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { Card } from "react-bootstrap";
+import logo from "../logo.svg";
 
-export const Card = (props: any) => {
-  return <div className="card-container">{props.children}</div>;
+export const CardItem = (props: any) => {
+  return (
+    <Card>
+      <Card.Img src={logo} />
+      <Card.Title>{props.title}</Card.Title>
+      <Card.Text>This is test text</Card.Text>
+    </Card>
+  );
 };
