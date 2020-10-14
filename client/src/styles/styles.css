@@ -51,7 +51,7 @@ footer {
 }
 
 .jumbotron-major {
-  height: 400px;
+  height: 300px;
   background-image: url("../bg.jpg");
   box-shadow: inset 0 0 0 50vw rgba(255, 0, 150, 0.3);
 }
@@ -66,4 +66,26 @@ footer {
 .back-btn {
   padding: 0.25rem 0.5rem;
   box-shadow: inset 0 0 0 50vw rgba(255, 0, 150, 0.3);
+}
+
+.Collapsible {
+  background-color: lightpink;
+  border: 1px solid black;
+  margin: 1rem 3rem;
+}
+
+.Collapsible__trigger {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  margin: auto 1rem;
+}
+
+.Collapsible__contentOuter {
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+.Collapsible__contentInner {
+  margin: 1rem;
 }
