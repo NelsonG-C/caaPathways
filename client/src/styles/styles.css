@@ -31,6 +31,7 @@ footer {
 
 .jumbotron {
   margin-bottom: 0rem;
+  border-radius: 0;
 }
 
 .jumbotron-home h1 {
@@ -47,4 +48,22 @@ footer {
 
 .cardItem {
   margin: 1rem;
+}
+
+.jumbotron-major {
+  height: 400px;
+  background-image: url("../bg.jpg");
+  box-shadow: inset 0 0 0 50vw rgba(255, 0, 150, 0.3);
+}
+
+.jumbotron-major img {
+  opacity: 30%;
+  width: 100%;
+  height: inherit;
+  z-index: 0;
+}
+
+.back-btn {
+  padding: 0.25rem 0.5rem;
+  box-shadow: inset 0 0 0 50vw rgba(255, 0, 150, 0.3);
 }
