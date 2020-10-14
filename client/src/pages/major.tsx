@@ -44,7 +44,7 @@ export const Major = (props: any) => {
       <Jumbotron className="jumbotron-major">
         <h1>Major Title</h1>
       </Jumbotron>
-      <div>
+      <div className="major-txt">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque alias
           reiciendis eos fugit itaque impedit? Libero maiores est eos,
@@ -53,9 +53,10 @@ export const Major = (props: any) => {
         </p>
       </div>
       <div>
+        <h2 className="major-txt">Problems To Solve</h2>
         {mockProblems.map((data: testType) => {
           return (
-            <Collapsible trigger={data.title}>
+            <Collapsible trigger={data.title} key={data.id}>
               <p>{data.description}</p>
             </Collapsible>
           );
