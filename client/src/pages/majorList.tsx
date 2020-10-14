@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { CardItem } from "../components/card";
-import { AnyNaptrRecord } from "dns";
 
 const mockData: any = [
   { id: "001", title: "test Title here" },
