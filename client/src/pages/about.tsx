@@ -13,26 +13,31 @@ export const AboutPage = (props: any) => {
           <Carousel.Item>
             <img className="d-block w-100" src={bg} alt="First slide" />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Welcome to Pathways</h3>
+              <h1>PATHWAYS</h1>
+              <p>Take your next step in Cellular Agriculture.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={bg} alt="Third slide" />
+            <Carousel.Caption>
+              <h3>Search the way you want</h3>
+              <p>Start with Majors or Problems to Solve.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src={bg} alt="Third slide" />
+            <Carousel.Caption>
+              <h3>Filter results</h3>
+              <p>Filter based on your specific interests</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={bg} alt="Third slide" />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src={bg} alt="Third slide" />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <h3>Find your passion</h3>
+              <p>Look at the results and see where you can help.</p>
             </Carousel.Caption>
             <Button onClick={handleClose}>All Done Here</Button>
           </Carousel.Item>
