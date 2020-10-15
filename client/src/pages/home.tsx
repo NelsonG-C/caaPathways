@@ -6,7 +6,7 @@ export const HomePage = (props: any) => {
   return (
     <div>
       <Jumbotron className="jumbotron-home">
-        <h1>Hello, world!</h1>
+        <h1>PATHWAYS</h1>
         <h2>
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information.
