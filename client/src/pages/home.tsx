@@ -7,13 +7,14 @@ export const HomePage = (props: any) => {
     <div>
       <Jumbotron className="jumbotron-home">
         <h1>PATHWAYS</h1>
-        <h2>
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </h2>
+        <h2>Take the next step for your career in Cellular Agriculture.</h2>
         <div className="j-btn-row">
-          <Button variant="primary">Majors</Button>
-          <Button variant="primary">Problems to Solve</Button>
+          <Button className="green-btn">
+            Majors <span>&rarr;</span>
+          </Button>
+          <Button className="green-btn">
+            Problems to Solve <span>&rarr;</span>
+          </Button>
         </div>
       </Jumbotron>
     </div>
