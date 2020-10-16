@@ -56,7 +56,11 @@ export const Major = (props: any) => {
         <h2 className="major-txt">Problems To Solve</h2>
         {mockProblems.map((data: testType) => {
           return (
-            <Collapsible trigger={data.title} key={data.id}>
+            <Collapsible
+              classParentString="pm"
+              trigger={data.title}
+              key={data.id}
+            >
               <p>{data.description}</p>
             </Collapsible>
           );
