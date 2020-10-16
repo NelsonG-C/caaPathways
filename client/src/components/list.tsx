@@ -18,10 +18,10 @@ export const List = (props: any) => {
       <div className="filter-section">
         <Container>
           <Row className="filter-rows">
-            <Col>
+            <Col xs={12} md={6}>
               <h2 className="filter-heading">Filter by Interest Area</h2>
             </Col>
-            <Col>
+            <Col xs={12} md={6}>
               {FilterNames.map((data, index) => {
                 return (
                   <Button key={index} variant="outline-info">
