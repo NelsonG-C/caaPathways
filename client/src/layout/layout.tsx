@@ -12,7 +12,7 @@ export const Layout = (props: any) => {
 
   return (
     <div>
-      <Navbar bg="light" expand={false}>
+      <Navbar bg="light" expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="mr-auto">
           <Nav>
@@ -20,9 +20,6 @@ export const Layout = (props: any) => {
             <Nav.Link>Problems</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand className="mx-auto">
-          <h4>Pathways</h4>
-        </Navbar.Brand>
         <Nav.Link onClick={handleShow}>About</Nav.Link>
         <AboutPage show={show} handleClose={handleClose} />
       </Navbar>
