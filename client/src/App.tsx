@@ -10,7 +10,6 @@ import { ProblemListPage } from "./pages/problemList";
 function App() {
   return (
     <Layout>
-      <HomePage />
       <ProblemListPage />
       <MajorListPage />
       <Major />

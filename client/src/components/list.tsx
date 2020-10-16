@@ -24,7 +24,7 @@ export const List = (props: any) => {
             <Col xs={12} md={6}>
               {FilterNames.map((data, index) => {
                 return (
-                  <Button key={index} variant="outline-info">
+                  <Button key={index} className="filter-button">
                     {data}
                   </Button>
                 );
