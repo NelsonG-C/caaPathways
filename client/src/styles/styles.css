@@ -7,6 +7,11 @@
   font-family: Poppins;
 }
 
+.custom-control,
+.custom-switch {
+  padding: 0 !important;
+}
+
 .green-btn {
   border-radius: none !important;
   background-color: #1c4127 !important;
@@ -28,12 +33,18 @@
 }
 
 .navbar-brand {
+  width: 100%;
   text-align: center;
   margin: 0 auto;
+  font-size: 30px;
 }
 
 .nav-link {
   color: white !important;
+}
+
+.about-nav {
+  float: right;
 }
 
 .carousel-item {
@@ -110,6 +121,10 @@ footer {
 
 .problem-list-top {
   background-color: #f6decb;
+}
+
+.card-link {
+  color: black;
 }
 
 .problem-container {

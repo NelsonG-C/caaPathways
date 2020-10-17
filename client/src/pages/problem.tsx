@@ -1,6 +1,8 @@
 import React from "react";
 import { Jumbotron, Dropdown, Button } from "react-bootstrap";
 import Collapsible from "react-collapsible";
+import { Switch, Route, useRouteMatch, useParams } from "react-router-dom";
+import { ErrorPage } from "../pages/error";
 
 type testType = {
   id: number;
@@ -36,6 +38,19 @@ const mockMajors: testType[] = [
 ];
 
 export const Problem = (props: any) => {
+  let { problemId }: any = useParams();
+  const { data } = props;
+
+  const [result] = data.filter((i: any) => i.id == problemId);
+
+  console.log("Result", result);
+
+  console.log(problemId);
+  let match = useRouteMatch();
+  console.log("Match.path", match.path);
+  if (result == undefined) {
+    return <ErrorPage />;
+  }
   return (
     <div>
       <div className="back-btn">
@@ -43,7 +58,7 @@ export const Problem = (props: any) => {
       </div>
       <div className="jumbo-shadow">
         <Jumbotron className="jumbotron-major">
-          <h1>Problem Title</h1>
+          <h1>{result.title}</h1>
         </Jumbotron>
       </div>
       <div className="major-txt">

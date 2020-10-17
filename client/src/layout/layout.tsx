@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Col, Navbar, Nav } from "react-bootstrap";
 import { AboutPage } from "../pages/about";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/styles.css";
 
@@ -13,15 +14,30 @@ export const Layout = (props: any) => {
   return (
     <div>
       <Navbar bg="light" expand="lg">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="mr-auto">
-          <Nav>
-            <Nav.Link href="#home">Majors</Nav.Link>
-            <Nav.Link>Problems</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-        <Nav.Link onClick={handleShow}>About</Nav.Link>
-        <AboutPage show={show} handleClose={handleClose} />
+        <Col>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav>
+              <Link className="nav-link" to="/majors">
+                Majors
+              </Link>
+              <Link className="nav-link" to="/problems">
+                Problems
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Col>
+        <Col>
+          <Link className="nav-link navbar-brand" to="/">
+            PATHWAYS
+          </Link>
+        </Col>
+        <Col>
+          <Nav.Link className="about-nav" onClick={handleShow}>
+            About
+          </Nav.Link>
+          <AboutPage show={show} handleClose={handleClose} />
+        </Col>
       </Navbar>
       {props.children}
       <footer>

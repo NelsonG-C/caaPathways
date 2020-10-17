@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import { CardItem } from "../components/card";
 import Collapsible from "react-collapsible";
+import { Link } from "react-router-dom";
 
 const FilterNames = [
   "Arts",
@@ -14,6 +15,7 @@ const FilterNames = [
 ];
 
 export const List = (props: any) => {
+  const { url } = props.match;
   return (
     <div>
       <Collapsible open={true} trigger={props.show}>
@@ -39,9 +41,15 @@ export const List = (props: any) => {
       <Container>
         <Row>
           {props.mockData.map((val: any) => {
+            console.log(val.id);
             return (
               <Col xs={12} md={4} className="card-test" key={val.id}>
-                <CardItem title={val.title} blurb={val.blurb} />
+                <CardItem
+                  title={val.title}
+                  blurb={val.blurb}
+                  id={val.id}
+                  url={url}
+                />
               </Col>
             );
           })}

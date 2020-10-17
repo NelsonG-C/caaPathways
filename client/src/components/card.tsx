@@ -1,18 +1,26 @@
 import React from "react";
 import { Card, Row, Button } from "react-bootstrap";
 import logo from "../logo.svg";
+import { Link } from "react-router-dom";
 
 export const CardItem = (props: any) => {
+  const { id, url, title, blurb } = props;
   console.log("Props here", props);
   return (
     <Card className="cardItem">
-      <Card.Img src={logo} />
+      <Link className="card-link" to={`${url}/${id}`}>
+        <Card.Img src={logo} />
+      </Link>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>{props.blurb}</Card.Text>
+        <Link className="card-link" to={`${url}/${id}`}>
+          <Card.Title>{title}</Card.Title>
+          <Card.Text className="mb-4">{blurb}</Card.Text>
+        </Link>
         <Row>
           <Button className="ml-3">Favourite</Button>
-          <Button className="ml-auto mr-3">Details</Button>
+          <Link className="card-link ml-auto mr-3" to={`${url}/${id}`}>
+            <Button className="ml-auto ">Details</Button>
+          </Link>
         </Row>
       </Card.Body>
     </Card>
