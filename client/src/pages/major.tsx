@@ -41,9 +41,11 @@ export const Major = (props: any) => {
       <div className="back-btn">
         <Button>Back</Button>
       </div>
-      <Jumbotron className="jumbotron-major">
-        <h1>Major Title</h1>
-      </Jumbotron>
+      <div className="jumbo-shadow">
+        <Jumbotron className="jumbotron-major">
+          <h1>Major Title</h1>
+        </Jumbotron>
+      </div>
       <div className="major-txt">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque alias
