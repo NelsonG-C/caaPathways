@@ -17,9 +17,9 @@ export const CardItem = (props: any) => {
           <Card.Text className="mb-4">{blurb}</Card.Text>
         </Link>
         <Row>
-          <Button className="ml-3">Favourite</Button>
+          <Button className="ml-3 green-btn">Favourite</Button>
           <Link className="card-link ml-auto mr-3" to={`${url}/${id}`}>
-            <Button className="ml-auto ">Details</Button>
+            <Button className="ml-auto green-btn">Details</Button>
           </Link>
         </Row>
       </Card.Body>
