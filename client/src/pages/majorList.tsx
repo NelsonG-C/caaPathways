@@ -37,7 +37,12 @@ const mockData = [
   },
   {
     id: 5,
-    title: "Cell Lines",
+    title: "New Test Here",
+    blurb: "Small blurb here for the card before entering it",
+  },
+  {
+    id: 6,
+    title: "New Test Here",
     blurb: "Small blurb here for the card before entering it",
   },
 ];
@@ -67,10 +72,10 @@ export const MajorListPage = (props: any) => {
                 </Col>
                 <Col>
                   <p className="f-btn"> Explore Majors</p>
-                  <Button className="f-btn">Filters &#9776;</Button>
+                  <Button className="f-btn green-btn">Filters &#9776;</Button>
                   <div className="f-btn">
                     <input className="filter-search"></input>
-                    <Button>&#10070;</Button>
+                    <Button className="green-btn">&#10070;</Button>
                   </div>
                 </Col>
               </Row>

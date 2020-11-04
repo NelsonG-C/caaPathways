@@ -33,7 +33,9 @@ export const AboutPage = (props: any) => {
             <Carousel.Caption>
               <h3>Find your passion</h3>
               <p>Look at the results and see where you can help.</p>
-              <Button onClick={handleClose}>All Done Here</Button>
+              <Button className="green-btn" onClick={handleClose}>
+                All Done Here
+              </Button>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

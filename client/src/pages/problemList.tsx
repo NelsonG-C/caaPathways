@@ -50,10 +50,10 @@ export const ProblemListPage = (props: any) => {
                 </Col>
                 <Col>
                   <p className="f-btn"> Explore problem areas</p>
-                  <Button className="f-btn">Filters &#9776;</Button>
+                  <Button className="f-btn green-btn">Filters &#9776;</Button>
                   <div className="f-btn">
                     <input className="filter-search"></input>
-                    <Button>&#10070;</Button>
+                    <Button className="green-btn">&#10070;</Button>
                   </div>
                 </Col>
               </Row>
