@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/styles.css";
 
-export const Layout = (props: any) => {
+export const Layout = (props: { children: React.ReactNode }) => {
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = (): void => setShow(false);
+  const handleShow = (): void => setShow(true);
 
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Col>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

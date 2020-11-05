@@ -4,8 +4,9 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { useRouteMatch, Route } from "react-router-dom";
 import Switch from "react-bootstrap/esm/Switch";
 import { Problem } from "./problem";
+import { MockData } from "../types";
 
-const mockData = [
+const mockData: MockData[] = [
   {
     id: 1,
     title: "Cell Lines",
@@ -33,7 +34,7 @@ const mockData = [
   },
 ];
 
-export const ProblemListPage = (props: any) => {
+export const ProblemListPage = () => {
   let { path, url } = useRouteMatch();
   let match = useRouteMatch();
   console.log("path", path);
@@ -62,7 +63,7 @@ export const ProblemListPage = (props: any) => {
           <List mockData={mockData} match={match} />
         </Route>
         <Route path={`${path}/:problemId`}>
-          <Problem data={mockData} />
+          <Problem mockData={mockData} />
         </Route>
       </div>
     </Switch>

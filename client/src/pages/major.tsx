@@ -2,13 +2,10 @@ import React from "react";
 import { Jumbotron, Dropdown, Button } from "react-bootstrap";
 import Collapsible from "react-collapsible";
 
-type testType = {
-  id: number;
-  title: string;
-  description: string;
-};
+//Types
+import { ProblemData } from "../types";
 
-const mockProblems: testType[] = [
+const mockProblems: ProblemData[] = [
   {
     id: 1,
     title: "Bioreactor Processing",
@@ -35,7 +32,7 @@ const mockProblems: testType[] = [
   },
 ];
 
-export const Major = (props: any) => {
+export const Major = () => {
   return (
     <div>
       <div className="back-btn">
@@ -56,7 +53,7 @@ export const Major = (props: any) => {
       </div>
       <div>
         <h2 className="major-txt">Problems To Solve</h2>
-        {mockProblems.map((data: testType) => {
+        {mockProblems.map((data: ProblemData) => {
           return (
             <Collapsible
               classParentString="pm"

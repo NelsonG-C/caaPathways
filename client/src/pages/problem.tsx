@@ -10,13 +10,10 @@ import {
 } from "react-router-dom";
 import { ErrorPage } from "../pages/error";
 
-type testType = {
-  id: number;
-  title: string;
-  description: string;
-};
+//Types
+import { MajorsData, MockData } from "../types";
 
-const mockMajors: testType[] = [
+const mockMajors: MajorsData[] = [
   {
     id: 1,
     title: "Agricultural Science",
@@ -54,15 +51,13 @@ export const Problem = (props: any) => {
     history.push("/problems");
   }
 
-  let match = useRouteMatch();
-  console.log("Match.path", match.path);
   if (result == undefined) {
     return <ErrorPage />;
   }
   return (
     <div>
       <div className="back-btn">
-        <Button onClick={handleClick}>Back</Button>
+        <Button onClick={() => handleClick}>Back</Button>
       </div>
       <div className="jumbo-shadow">
         <Jumbotron className="jumbotron-major">
@@ -79,7 +74,7 @@ export const Problem = (props: any) => {
       </div>
       <div>
         <h2 className="major-txt">Relevant Majors</h2>
-        {mockMajors.map((data: testType) => {
+        {mockMajors.map((data: MajorsData) => {
           return (
             <Collapsible
               classParentString="pm"

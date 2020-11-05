@@ -2,7 +2,9 @@ import React from "react";
 import { Container, Col, Row, Button } from "react-bootstrap";
 import { CardItem } from "../components/card";
 import Collapsible from "react-collapsible";
-import { Link } from "react-router-dom";
+
+//Types
+import { ListProps, MockData } from "../types";
 
 const FilterNames = [
   "Arts",
@@ -14,7 +16,7 @@ const FilterNames = [
   "Engineering",
 ];
 
-export const List = (props: any) => {
+export const List = (props: ListProps) => {
   const { url } = props.match;
   return (
     <div>
@@ -40,7 +42,7 @@ export const List = (props: any) => {
       </Collapsible>
       <Container>
         <Row>
-          {props.mockData.map((val: any) => {
+          {props.mockData.map((val: MockData) => {
             console.log(val.id);
             return (
               <Col xs={12} md={4} className="card-test" key={val.id}>

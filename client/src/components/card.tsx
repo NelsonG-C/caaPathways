@@ -1,11 +1,13 @@
 import React from "react";
-import { Card, Row, Button } from "react-bootstrap";
+import { Button, Card, Row } from "react-bootstrap";
 import logo from "../logo.svg";
 import { Link } from "react-router-dom";
 
-export const CardItem = (props: any) => {
+//types
+import { CardProps } from "../types";
+
+export const CardItem = (props: CardProps) => {
   const { id, url, title, blurb } = props;
-  console.log("Props here", props);
   return (
     <Card className="cardItem">
       <Link className="card-link" to={`${url}/${id}`}>

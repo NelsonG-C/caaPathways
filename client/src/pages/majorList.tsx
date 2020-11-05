@@ -84,7 +84,7 @@ export const MajorListPage = (props: any) => {
           <List mockData={mockData} match={match} />
         </Route>
         <Route path={`${path}/:majorId`}>
-          <Major data={mockData} />
+          <Major />
         </Route>
       </div>
     </Switch>

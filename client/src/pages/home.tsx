@@ -3,7 +3,7 @@ import { Jumbotron, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../styles/styles.css";
 
-export const HomePage = (props: any) => {
+export const HomePage = () => {
   return (
     <div>
       <Jumbotron className="jumbotron-home">

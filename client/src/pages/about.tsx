@@ -2,9 +2,10 @@ import React from "react";
 import { Button, Modal, Carousel } from "react-bootstrap";
 import bg from "../bg.jpg";
 
-// trying as a modal
+//Types
+import { AboutProps } from "../types";
 
-export const AboutPage = (props: any) => {
+export const AboutPage = (props: AboutProps) => {
   const { show, handleClose } = props;
   return (
     <div>
@@ -33,7 +34,7 @@ export const AboutPage = (props: any) => {
             <Carousel.Caption>
               <h3>Find your passion</h3>
               <p>Look at the results and see where you can help.</p>
-              <Button className="green-btn" onClick={handleClose}>
+              <Button className="green-btn" onClick={() => handleClose}>
                 All Done Here
               </Button>
             </Carousel.Caption>
